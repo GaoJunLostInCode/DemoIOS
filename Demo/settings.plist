@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DemoNames</key>
+	<array>
+		<dict>
+			<key>DemoName</key>
+			<string>可展开的TableView</string>
+			<key>ControllerName</key>
+			<string>GJExpendTableViewController</string>
+		</dict>
+		<dict>
+			<key>DemoName</key>
+			<string>NetWork</string>
+			<key>ControllerName</key>
+			<string>GJNetWorkViewController</string>
+		</dict>
+	</array>
+</dict>
+</plist>
