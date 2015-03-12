@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GJExpendHeaderView.h"
 
-@interface GJExpendTableViewController : UITableViewController<GJExpendHeaderViewDelegate>
+
+@interface GJExpendTableViewController : UITableViewController
 
 @end

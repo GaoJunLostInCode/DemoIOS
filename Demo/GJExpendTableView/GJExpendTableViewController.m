@@ -7,6 +7,7 @@
 //
 
 #import "GJExpendTableViewController.h"
+#import "GJExpendHeaderView.h"
 #import "SettingsUtil.h"
 #import "GJSectionInfo.h"
 #import "GJCellInfo.h"
@@ -16,7 +17,7 @@
 static const NSString *IDENTIFIER_CELL = @"CELL";
 static const NSString *IDENTIFIER_HEADER = @"HEADER";
 
-@interface GJExpendTableViewController ()
+@interface GJExpendTableViewController ()<GJExpendHeaderViewDelegate>
 
 @property NSMutableArray *objects;
 
@@ -117,24 +118,46 @@ static const NSString *IDENTIFIER_HEADER = @"HEADER";
 //    return UITableViewCellEditingStyleDelete;
 //}
 
-- (NSString*)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return @"删除";
-}
+/**
+ *  实现 -(NSArray*)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath 函数后下面这两个函数的效果会被替代
+ */
+//- (NSString*)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return @"删除";
+//}
+//
+//
+//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    if (editingStyle == UITableViewCellEditingStyleDelete)
+//    {
+//        GJSectionInfo *sectionInfo = [self.objects objectAtIndex:indexPath.section];
+//        [sectionInfo removeCellInfoAtIndex:indexPath.row];
+//        
+//        
+//        [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+//    }
+//    
+//}
 
-
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+- (NSArray*)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (editingStyle == UITableViewCellEditingStyleDelete)
-    {
-        GJSectionInfo *sectionInfo = [self.objects objectAtIndex:indexPath.section];
-        [sectionInfo removeCellInfoAtIndex:indexPath.row];
-        
-        NSMutableArray *arrIndexPath = [[NSMutableArray alloc] initWithObjects:indexPath, nil];
-        
-        [self.tableView deleteRowsAtIndexPaths:arrIndexPath withRowAnimation:UITableViewRowAnimationFade];
-    }
+    UITableViewRowAction *deleteAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除" handler:
+                                    ^(UITableViewRowAction *action, NSIndexPath *indexPath)
+                                          {
+                                                GJSectionInfo *sectionInfo = [self.objects objectAtIndex:indexPath.section];
+                                                [sectionInfo removeCellInfoAtIndex:indexPath.row];
+                                              
+                                                [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+                                            }];
     
+    UITableViewRowAction *cancelAttentionAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"取消关注" handler:
+                                                   ^(UITableViewRowAction *action, NSIndexPath *indexPath){
+                                                       NSLog(@"取消关注 %ld", indexPath.row);
+                                                   }];
+    
+    
+    return @[deleteAction, cancelAttentionAction];
 }
 
 #pragma mark GJExpendHeaderView delegate
@@ -142,7 +165,7 @@ static const NSString *IDENTIFIER_HEADER = @"HEADER";
 - (void)expendHeaderClicked:(GJExpendHeaderView*)header sectionInfo:(GJSectionInfo*)sectionInfo isOpen:(BOOL)open
 {
     NSMutableArray *rows = [[NSMutableArray alloc]init];
-    for (int i=0, len=sectionInfo.cellCount; i<len; i++)
+    for (NSInteger i=0, len=sectionInfo.cellCount; i<len; i++)
     {
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:sectionInfo.section];
         [rows addObject:indexPath];
