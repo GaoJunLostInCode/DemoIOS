@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+const static NSInteger kGJImageUtilsImageMaxLength = 800;
+
 @interface GJImageUtils : NSObject
 
 +(UIImage*)compressImageDownWithMaxLength:(UIImage*)theImage maxLength:(NSInteger)maxLength;

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GJImageUtils.h"
 
+
 @implementation GJImageUtils
 
 +(UIImage*)compressImageDownWithMaxLength:(UIImage*)theImage maxLength:(NSInteger)maxLength

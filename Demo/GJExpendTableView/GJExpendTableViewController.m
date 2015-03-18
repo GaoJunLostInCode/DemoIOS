@@ -160,6 +160,7 @@ static const NSString *IDENTIFIER_HEADER = @"HEADER";
     return @[deleteAction, cancelAttentionAction];
 }
 
+
 #pragma mark GJExpendHeaderView delegate
 
 - (void)expendHeaderClicked:(GJExpendHeaderView*)header sectionInfo:(GJSectionInfo*)sectionInfo isOpen:(BOOL)open

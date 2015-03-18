@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1523D4D1AB67E8900E46170 /* GJCacheImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E1523D4C1AB67E8900E46170 /* GJCacheImage.m */; };
 		E1D2EBF71A9412A80048F8B1 /* GJExpendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D2EBF51A9412A80048F8B1 /* GJExpendTableViewCell.m */; };
 		E1D2EBF81A9412A80048F8B1 /* GJExpendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D2EBF61A9412A80048F8B1 /* GJExpendTableViewCell.xib */; };
 		E1D5B1081AAAE8B3009A759F /* GJNetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D5B1061AAAE8B3009A759F /* GJNetWorkViewController.m */; };
 		E1D5B1091AAAE8B3009A759F /* GJNetWorkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D5B1071AAAE8B3009A759F /* GJNetWorkViewController.xib */; };
+		E1EE40F21AB136F100B0642C /* GJTestControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1EE40F01AB136F100B0642C /* GJTestControllerViewController.xib */; };
 		E1F0CAEB1AADB87500E80A71 /* GJImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F0CAEA1AADB87500E80A71 /* GJImageUtils.m */; };
 		E1F20BEE1AB03B9B0059EA53 /* GJHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F20BED1AB03B9B0059EA53 /* GJHttpClient.m */; };
 		E1F20BF21AB04BC00059EA53 /* GJParamBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F20BF11AB04BC00059EA53 /* GJParamBase.m */; };
@@ -44,12 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E1523D4B1AB67E8900E46170 /* GJCacheImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJCacheImage.h; sourceTree = "<group>"; };
+		E1523D4C1AB67E8900E46170 /* GJCacheImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJCacheImage.m; sourceTree = "<group>"; };
 		E1D2EBF41A9412A80048F8B1 /* GJExpendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJExpendTableViewCell.h; sourceTree = "<group>"; };
 		E1D2EBF51A9412A80048F8B1 /* GJExpendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJExpendTableViewCell.m; sourceTree = "<group>"; };
 		E1D2EBF61A9412A80048F8B1 /* GJExpendTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJExpendTableViewCell.xib; sourceTree = "<group>"; };
 		E1D5B1051AAAE8B3009A759F /* GJNetWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJNetWorkViewController.h; sourceTree = "<group>"; };
 		E1D5B1061AAAE8B3009A759F /* GJNetWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJNetWorkViewController.m; sourceTree = "<group>"; };
 		E1D5B1071AAAE8B3009A759F /* GJNetWorkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJNetWorkViewController.xib; sourceTree = "<group>"; };
+		E1EE40F01AB136F100B0642C /* GJTestControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJTestControllerViewController.xib; sourceTree = "<group>"; };
 		E1F0CAE91AADB87500E80A71 /* GJImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJImageUtils.h; sourceTree = "<group>"; };
 		E1F0CAEA1AADB87500E80A71 /* GJImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJImageUtils.m; sourceTree = "<group>"; };
 		E1F20BEC1AB03B9B0059EA53 /* GJHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJHttpClient.h; sourceTree = "<group>"; };
@@ -105,6 +110,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E1523D4E1AB68AE500E46170 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		E1D5B1041AAAE850009A759F /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +126,8 @@
 				E1D5B1071AAAE8B3009A759F /* GJNetWorkViewController.xib */,
 				E1F20BEC1AB03B9B0059EA53 /* GJHttpClient.h */,
 				E1F20BED1AB03B9B0059EA53 /* GJHttpClient.m */,
+				E1523D4B1AB67E8900E46170 /* GJCacheImage.h */,
+				E1523D4C1AB67E8900E46170 /* GJCacheImage.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -150,6 +164,7 @@
 		E1FF72831A92B71A0036777A /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				E1523D4E1AB68AE500E46170 /* Common */,
 				E1D5B1041AAAE850009A759F /* NetWork */,
 				E1FF72B11A92BA7E0036777A /* Utils */,
 				E1FF72AD1A92B9730036777A /* GJExpendTableView */,
@@ -157,6 +172,7 @@
 				E1FF72891A92B71A0036777A /* AppDelegate.m */,
 				E1FF728B1A92B71A0036777A /* MasterViewController.h */,
 				E1FF728C1A92B71A0036777A /* MasterViewController.m */,
+				E1EE40F01AB136F100B0642C /* GJTestControllerViewController.xib */,
 				E1FF72911A92B71A0036777A /* Main.storyboard */,
 				E1FF72941A92B71A0036777A /* Images.xcassets */,
 				E1FF72961A92B71A0036777A /* LaunchScreen.xib */,
@@ -305,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1FF72931A92B71A0036777A /* Main.storyboard in Resources */,
+				E1EE40F21AB136F100B0642C /* GJTestControllerViewController.xib in Resources */,
 				E1FF72CF1A92C5310036777A /* GJExpendTableViewController.xib in Resources */,
 				E1D2EBF81A9412A80048F8B1 /* GJExpendTableViewCell.xib in Resources */,
 				E1FF72B61A92BAA90036777A /* ExpendTableView.plist in Resources */,
@@ -331,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1F20BF51AB04C5F0059EA53 /* GJParamTest.m in Sources */,
+				E1523D4D1AB67E8900E46170 /* GJCacheImage.m in Sources */,
 				E1D5B1081AAAE8B3009A759F /* GJNetWorkViewController.m in Sources */,
 				E1FF728A1A92B71A0036777A /* AppDelegate.m in Sources */,
 				E1F0CAEB1AADB87500E80A71 /* GJImageUtils.m in Sources */,
