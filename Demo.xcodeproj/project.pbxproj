@@ -12,7 +12,6 @@
 		E1D2EBF81A9412A80048F8B1 /* GJExpendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D2EBF61A9412A80048F8B1 /* GJExpendTableViewCell.xib */; };
 		E1D5B1081AAAE8B3009A759F /* GJNetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D5B1061AAAE8B3009A759F /* GJNetWorkViewController.m */; };
 		E1D5B1091AAAE8B3009A759F /* GJNetWorkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D5B1071AAAE8B3009A759F /* GJNetWorkViewController.xib */; };
-		E1EE40F21AB136F100B0642C /* GJTestControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1EE40F01AB136F100B0642C /* GJTestControllerViewController.xib */; };
 		E1F0CAEB1AADB87500E80A71 /* GJImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F0CAEA1AADB87500E80A71 /* GJImageUtils.m */; };
 		E1F20BEE1AB03B9B0059EA53 /* GJHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F20BED1AB03B9B0059EA53 /* GJHttpClient.m */; };
 		E1F20BF21AB04BC00059EA53 /* GJParamBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F20BF11AB04BC00059EA53 /* GJParamBase.m */; };
@@ -54,7 +53,6 @@
 		E1D5B1051AAAE8B3009A759F /* GJNetWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJNetWorkViewController.h; sourceTree = "<group>"; };
 		E1D5B1061AAAE8B3009A759F /* GJNetWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJNetWorkViewController.m; sourceTree = "<group>"; };
 		E1D5B1071AAAE8B3009A759F /* GJNetWorkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJNetWorkViewController.xib; sourceTree = "<group>"; };
-		E1EE40F01AB136F100B0642C /* GJTestControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJTestControllerViewController.xib; sourceTree = "<group>"; };
 		E1F0CAE91AADB87500E80A71 /* GJImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJImageUtils.h; sourceTree = "<group>"; };
 		E1F0CAEA1AADB87500E80A71 /* GJImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJImageUtils.m; sourceTree = "<group>"; };
 		E1F20BEC1AB03B9B0059EA53 /* GJHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJHttpClient.h; sourceTree = "<group>"; };
@@ -172,7 +170,6 @@
 				E1FF72891A92B71A0036777A /* AppDelegate.m */,
 				E1FF728B1A92B71A0036777A /* MasterViewController.h */,
 				E1FF728C1A92B71A0036777A /* MasterViewController.m */,
-				E1EE40F01AB136F100B0642C /* GJTestControllerViewController.xib */,
 				E1FF72911A92B71A0036777A /* Main.storyboard */,
 				E1FF72941A92B71A0036777A /* Images.xcassets */,
 				E1FF72961A92B71A0036777A /* LaunchScreen.xib */,
@@ -321,7 +318,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1FF72931A92B71A0036777A /* Main.storyboard in Resources */,
-				E1EE40F21AB136F100B0642C /* GJTestControllerViewController.xib in Resources */,
 				E1FF72CF1A92C5310036777A /* GJExpendTableViewController.xib in Resources */,
 				E1D2EBF81A9412A80048F8B1 /* GJExpendTableViewCell.xib in Resources */,
 				E1FF72B61A92BAA90036777A /* ExpendTableView.plist in Resources */,

@@ -34,6 +34,9 @@ static const NSString *IDENTIFIER_HEADER = @"HEADER";
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
     [self loadTestDataFromPlist];
     [self.tableView registerNib:[UINib nibWithNibName:@"GJExpendTableViewCell" bundle:nil] forCellReuseIdentifier:IDENTIFIER_CELL];
     [self.tableView registerNib:[UINib nibWithNibName:@"GJExpendHeaderView" bundle:nil] forHeaderFooterViewReuseIdentifier:IDENTIFIER_HEADER];
@@ -112,33 +115,27 @@ static const NSString *IDENTIFIER_HEADER = @"HEADER";
 {
     return YES;
 }
-//
-//- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    return UITableViewCellEditingStyleDelete;
-//}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
 
 /**
  *  实现 -(NSArray*)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath 函数后下面这两个函数的效果会被替代
+ *  但是这两个函数必须实现，代码体可为空
+ *
  */
-//- (NSString*)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    return @"删除";
-//}
-//
-//
-//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    if (editingStyle == UITableViewCellEditingStyleDelete)
-//    {
-//        GJSectionInfo *sectionInfo = [self.objects objectAtIndex:indexPath.section];
-//        [sectionInfo removeCellInfoAtIndex:indexPath.row];
-//        
-//        
-//        [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-//    }
-//    
-//}
+- (NSString*)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return @"删除";
+}
+
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
 
 - (NSArray*)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -159,7 +156,6 @@ static const NSString *IDENTIFIER_HEADER = @"HEADER";
     
     return @[deleteAction, cancelAttentionAction];
 }
-
 
 #pragma mark GJExpendHeaderView delegate
 
