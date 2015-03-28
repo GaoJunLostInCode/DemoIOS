@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 gaojun. All rights reserved.
 //
 
-#import "CustomZBarViewController.h"
+#import "GJCustomZBarViewController.h"
 
 
 #define SCANVIEW_EdgeTop 40.0
@@ -21,12 +21,12 @@
 
 #define DARKCOLOR_ALPHA 0.5 //深色透明度
 
-@interface CustomZBarViewController ()
+@interface GJCustomZBarViewController ()
 @property (nonatomic) NSInteger requestCode;
 @end
 
 
-@implementation CustomZBarViewController
+@implementation GJCustomZBarViewController
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -57,8 +57,9 @@
     
 //    [self setScanView];
     
+    [ZBarReaderView class];
 //    _readerView= [[ZBarReaderView alloc]init];
-//    
+//
 //    _readerView.frame =CGRectMake(0,64, VIEW_WIDTH, VIEW_HEIGHT -64);
     
 //    self.view = _readerView;
@@ -150,7 +151,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)setCustomZBarViewControllerDelegate:(id<CustomZBarViewControllerDelegate>)delegate requestCode:(NSInteger)requestCode
+- (void)setCustomZBarViewControllerDelegate:(id<GJCustomZBarViewControllerDelegate>)delegate requestCode:(NSInteger)requestCode
 {
     _delegate = delegate;
     self.requestCode = requestCode;

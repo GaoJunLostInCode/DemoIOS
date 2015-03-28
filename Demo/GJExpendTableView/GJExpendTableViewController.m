@@ -20,6 +20,7 @@ static const NSString *IDENTIFIER_HEADER = @"HEADER";
 @interface GJExpendTableViewController ()<GJExpendHeaderViewDelegate>
 
 @property NSMutableArray *objects;
+@property (nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -40,13 +41,6 @@ static const NSString *IDENTIFIER_HEADER = @"HEADER";
     [self loadTestDataFromPlist];
     [self.tableView registerNib:[UINib nibWithNibName:@"GJExpendTableViewCell" bundle:nil] forCellReuseIdentifier:IDENTIFIER_CELL];
     [self.tableView registerNib:[UINib nibWithNibName:@"GJExpendHeaderView" bundle:nil] forHeaderFooterViewReuseIdentifier:IDENTIFIER_HEADER];
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-    self.navigationController.navigationBarHidden = NO;
 }
 
 - (void)didReceiveMemoryWarning {

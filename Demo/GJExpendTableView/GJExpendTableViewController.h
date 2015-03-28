@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GJBaseViewController.h"
 
-
-@interface GJExpendTableViewController : UITableViewController
+@interface GJExpendTableViewController : GJBaseViewController
 
 @end

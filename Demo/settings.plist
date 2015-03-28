@@ -16,6 +16,18 @@
 			<key>ControllerName</key>
 			<string>GJNetWorkViewController</string>
 		</dict>
+		<dict>
+			<key>DemoName</key>
+			<string>扫描二维码</string>
+			<key>ControllerName</key>
+			<string>GJZBarTestViewController</string>
+		</dict>
+		<dict>
+			<key>DemoName</key>
+			<string>iBeancon</string>
+			<key>ControllerName</key>
+			<string>GJiBeanconTestViewController</string>
+		</dict>
 	</array>
 </dict>
 </plist>

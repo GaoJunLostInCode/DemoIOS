@@ -7,8 +7,9 @@
 //
 
 #import "GJZBarTestViewController.h"
+#import "GJCustomZBarViewController.h"
 
-@interface GJZBarTestViewController ()
+@interface GJZBarTestViewController ()<GJCustomZBarViewControllerDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *labelZBarCode;
 
 @end
@@ -36,7 +37,14 @@
 */
 - (IBAction)onScanButtonClicked:(id)sender
 {
-    
+    GJCustomZBarViewController *controller = [[GJCustomZBarViewController alloc] initWithNibName:@"GJCustomZBarViewController" bundle:nil];
+    [controller setCustomZBarViewControllerDelegate:self requestCode:1];
+    [self.navigationController presentViewController:controller animated:YES completion:nil];
+}
+
+- (void)onZBarResultReturned:(NSDictionary *)result requestCode:(NSInteger)requestCode
+{
+    [_labelZBarCode setText:result[@"code"]];
 }
 
 @end

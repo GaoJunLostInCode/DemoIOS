@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "ZBarSDK.h"
 
-@protocol CustomZBarViewControllerDelegate <NSObject>
+@protocol GJCustomZBarViewControllerDelegate <NSObject>
 
 - (void)onZBarResultReturned:(NSDictionary *)result requestCode:(NSInteger)requestCode;
 
 @end
 
-@interface CustomZBarViewController : UIViewController<ZBarReaderViewDelegate>
+@interface GJCustomZBarViewController : UIViewController<ZBarReaderViewDelegate>
 {
     @private BOOL upOrdown;
     @private IBOutlet ZBarReaderView *_readerView;
@@ -28,11 +28,11 @@
     //设置扫描画面
     
     @private IBOutlet UIView *_overlayView;
-    @private id<CustomZBarViewControllerDelegate> _delegate;
+    @private id<GJCustomZBarViewControllerDelegate> _delegate;
     
 }
 
 - (IBAction)onCancelClick:(id)sender;
-- (void)setCustomZBarViewControllerDelegate:(id<CustomZBarViewControllerDelegate>)delegate requestCode:(NSInteger)requestCode;
+- (void)setCustomZBarViewControllerDelegate:(id<GJCustomZBarViewControllerDelegate>)delegate requestCode:(NSInteger)requestCode;
 
 @end

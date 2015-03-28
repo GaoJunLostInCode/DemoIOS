@@ -1,5 +1,5 @@
 //
-//  GJZBarTestViewController.h
+//  GJBaseViewController.h
 //  Demo
 //
 //  Created by 高 军 on 15/3/18.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GJBaseViewController.h"
 
-@interface GJZBarTestViewController : GJBaseViewController
+@interface GJBaseViewController : UIViewController
 
 @end
