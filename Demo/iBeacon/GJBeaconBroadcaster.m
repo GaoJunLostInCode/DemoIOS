@@ -9,21 +9,21 @@
 #import "GJBeaconBroadcaster.h"
 
 @interface GJBeaconBroadcaster ()<CBPeripheralManagerDelegate>
-@property (nonatomic) CLBeaconRegion *beanRegion;
+@property (nonatomic) CLBeaconRegion *beaconRegion;
 @property (nonatomic) CBPeripheralManager *peripheralManager;
 @end
 
 @implementation GJBeaconBroadcaster
 
-- (id)init
+- (id)initWithiBeaconUUIDString:(NSString*)uuidString
 {
     self = [super init];
     
-    NSUUID *proximityUUID = [[NSUUID alloc] initWithUUIDString:@"39ED98FF-2900-441A-802F-9C398FC199D4"];
+    NSUUID *proximityUUID = [[NSUUID alloc] initWithUUIDString:uuidString];
     
     // Create the beacon region.
     NSString *identifier = [[NSBundle mainBundle] bundleIdentifier];
-    self.beanRegion = [[CLBeaconRegion alloc] initWithProximityUUID:proximityUUID identifier:identifier];
+    self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:proximityUUID identifier:identifier];
     
     return self;
 }
@@ -60,7 +60,7 @@
     if (peripheral.state == CBPeripheralManagerStatePoweredOn)
     {
         // Create a dictionary of advertisement data.
-        NSDictionary *beaconPeripheralData = [self.beanRegion peripheralDataWithMeasuredPower:nil];
+        NSDictionary *beaconPeripheralData = [self.beaconRegion peripheralDataWithMeasuredPower:nil];
         
         // Start advertising your beacon's data.
         [self.peripheralManager startAdvertising:beaconPeripheralData];

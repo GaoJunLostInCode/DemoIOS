@@ -7,9 +7,10 @@
 //
 
 #import "GJiBeanconTestViewController.h"
-#import "GJiBeaconManager.h"
 #import "GJBeaconBroadcaster.h"
 #import "GJBeaconDetector.h"
+
+const static NSString *UUID_IBEACON = @"00000000-0000-0000-C000-000000000028";
 
 @interface GJiBeanconTestViewController ()<CLLocationManagerDelegate, CBPeripheralManagerDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *labeliBeacon;
@@ -24,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.beaconBroadcaster = [[GJBeaconBroadcaster alloc] init];
+    self.beaconBroadcaster = [[GJBeaconBroadcaster alloc] initWithiBeaconUUIDString:UUID_IBEACON];
     self.beaconDetector = [[GJBeaconDetector alloc] init];
 }
 
@@ -50,7 +51,7 @@
 
 - (IBAction)onButtonDetectiBeanconClicked:(id)sender
 {
-    [self.beaconDetector detectBeaconWithLocationManagerDelegate:self];
+    [self.beaconDetector detectiBeacon:UUID_IBEACON locationManagerDelegate:self];
 }
 
 #pragma mark CLLocationManager Delegate
@@ -80,6 +81,8 @@
 
     NSString *string = [NSString stringWithFormat:@"enter region: %@, major:%@, minor:%@, meter:%@", beaconRegion.proximityUUID.UUIDString, beaconRegion.major, beaconRegion.minor, beaconRegion];
     [self.labeliBeacon setText:string];
+    
+    [manager startRangingBeaconsInRegion:beaconRegion];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region
@@ -87,6 +90,8 @@
     CLBeaconRegion *beaconRegion = (CLBeaconRegion*)region;
     NSString *string = [NSString stringWithFormat:@"exist region: %@, major:%@, minor:%@", beaconRegion.proximityUUID.UUIDString, beaconRegion.major, beaconRegion.minor];
     [self.labeliBeacon setText:string];
+    
+    [manager stopRangingBeaconsInRegion:beaconRegion];
 }
 
 - (void)locationManager:(CLLocationManager *)manager
@@ -95,13 +100,13 @@
 {
     if ([beacons count] > 0)
     {
-        CLBeacon *nearestExhibit = [beacons firstObject];
+        CLBeacon *nearestBeacon = [beacons firstObject];
         
         // Present the exhibit-specific UI only when
         // the user is relatively close to the exhibit.
-        if (CLProximityNear == nearestExhibit.proximity)
+        if (CLProximityNear == nearestBeacon.proximity)
         {
-            NSString *strLog = [NSString stringWithFormat:@"accuracy :%f", nearestExhibit.accuracy];
+            NSString *strLog = [NSString stringWithFormat:@"accuracy :%2f, UUID:%@, major:%@, minor:%@", nearestBeacon.accuracy, nearestBeacon.proximityUUID.UUIDString, nearestBeacon.major, nearestBeacon.minor];
             [self.labeliBeacon setText:strLog];
         } else
         {

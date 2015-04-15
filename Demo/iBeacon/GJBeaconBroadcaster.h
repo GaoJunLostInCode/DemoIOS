@@ -12,6 +12,7 @@
 
 @interface GJBeaconBroadcaster : NSObject
 
+- (id)initWithiBeaconUUIDString:(NSString*)uuidString;
 + (BOOL)isAvailable;
 - (void)startAdvertiseBeacon;
 

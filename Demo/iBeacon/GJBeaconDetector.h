@@ -11,6 +11,6 @@
 
 @interface GJBeaconDetector : NSObject
 
-- (void)detectBeaconWithLocationManagerDelegate:(id<CLLocationManagerDelegate>)delegate;
+- (void)detectiBeacon:(NSString*)iBeaconUUIDString locationManagerDelegate:(id<CLLocationManagerDelegate>)delegate;
 
 @end

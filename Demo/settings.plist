@@ -28,6 +28,24 @@
 			<key>ControllerName</key>
 			<string>GJiBeanconTestViewController</string>
 		</dict>
+		<dict>
+			<key>DemoName</key>
+			<string>BlueClient</string>
+			<key>ControllerName</key>
+			<string>GJBlueToothTableViewController</string>
+		</dict>
+		<dict>
+			<key>DemoName</key>
+			<string>BlueSever</string>
+			<key>ControllerName</key>
+			<string>GJBlueServerViewController</string>
+		</dict>
+		<dict>
+			<key>DemoName</key>
+			<string>摇一摇</string>
+			<key>ControllerName</key>
+			<string>GJShakeViewController</string>
+		</dict>
 	</array>
 </dict>
 </plist>

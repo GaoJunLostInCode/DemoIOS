@@ -34,7 +34,7 @@
     return self;
 }
 
-- (void)detectBeaconWithLocationManagerDelegate:(id<CLLocationManagerDelegate>)delegate
+- (void)detectiBeacon:(NSString*)iBeaconUUIDString locationManagerDelegate:(id<CLLocationManagerDelegate>)delegate
 {
     if (![GJBeaconDetector isAvailable])
     {
@@ -43,13 +43,13 @@
     }
     
     NSString *identifier = [[NSBundle mainBundle] bundleIdentifier];
-    NSUUID *proximityUUID = [[NSUUID alloc] initWithUUIDString:@"39ED98FF-2900-441A-802F-9C398FC199D4"];
+    NSUUID *proximityUUID = [[NSUUID alloc] initWithUUIDString:iBeaconUUIDString];
     CLBeaconRegion* beaconReginTarget = [[CLBeaconRegion alloc] initWithProximityUUID: proximityUUID identifier:identifier];
     
     self.locationManager.delegate = delegate;
 
-    [self.locationManager startRangingBeaconsInRegion:beaconReginTarget];
     [self.locationManager startMonitoringForRegion:beaconReginTarget];
+    [self.locationManager startRangingBeaconsInRegion:beaconReginTarget];
 
     [self.locationManager startUpdatingLocation];
 }
