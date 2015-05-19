@@ -19,4 +19,6 @@ typedef void(^GJHttpClientCompletedHandler)(NSURLResponse*, NSData*, NSError*);
 //upload
 - (void)upload:(NSString*)strWholeUrl postParams:(NSDictionary*)postParems data:(NSData*)data fileName:(NSString*)fileName completedHandler:(GJHttpClientCompletedHandler)handler;
 
+- (void)getWithWholeUrl:(NSString*)wholeUrl completedOnMainThread:(GJHttpClientCompletedHandler)handler;
+
 @end

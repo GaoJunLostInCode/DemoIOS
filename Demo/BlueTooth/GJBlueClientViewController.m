@@ -9,6 +9,7 @@
 #import "GJBlueClientViewController.h"
 #import "GJBlueToothCopier.h"
 
+
 static NSString *cellIdentifier = @"cell";
 static NSString *headerIdentifier = @"header";
 
@@ -16,7 +17,8 @@ static NSString *headerIdentifier = @"header";
 @property (strong, nonatomic) IBOutlet UILabel *mLabelName;
 @property (strong, nonatomic) IBOutlet UITableView *mTableView;
 @property (nonatomic) NSMutableArray *mArrServices;
-
+@property (strong, nonatomic) IBOutlet UIImageView *mImgV;
+@property (nonatomic) NSMutableData *mDataReceived;
 @end
 
 @implementation GJBlueClientViewController
@@ -25,6 +27,7 @@ static NSString *headerIdentifier = @"header";
 {
     [super viewDidLoad];
     
+    self.mDataReceived = [NSMutableData data];
     self.mArrServices = [[NSMutableArray alloc] init];
     
     self.mPeripheral.delegate = self;
@@ -36,7 +39,12 @@ static NSString *headerIdentifier = @"header";
     [self.mTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifier];
     [self.mTableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerIdentifier];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"write" style:UIBarButtonItemStyleDone target:self action:@selector(writeMinor)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"read" style:UIBarButtonItemStyleDone target:self action:@selector(readFromServer)];
+}
+
+- (void)readFromServer
+{
+
 }
 
 - (void)writeMinor
@@ -148,11 +156,13 @@ static NSString *headerIdentifier = @"header";
 
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error
 {
-    NSLog(@"services count :%ld", peripheral.services.count);
     for (CBService *service in peripheral.services)
     {
-        NSLog(@"Discovered service %@", service);
-        [peripheral discoverCharacteristics:nil forService:service];
+        if ([service.UUID isEqual:[CBUUID UUIDWithString:(NSString*)UUID_SERVICE]])
+        {
+            NSLog(@"Discovered service %@", service);
+            [peripheral discoverCharacteristics:nil forService:service];
+        }
     }
 }
 
@@ -163,25 +173,44 @@ static NSString *headerIdentifier = @"header";
     
     for (CBCharacteristic *characteristic in service.characteristics)
     {
-        [peripheral discoverDescriptorsForCharacteristic:characteristic];
-        NSLog(@"Discovered characteristic %@", characteristic);
-        
-        [peripheral readValueForCharacteristic:characteristic];
+        if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:(NSString*)UUID_CHARACTER]])
+        {
+            NSLog(@"Discovered characteristic %@", characteristic);
+            NSData *data = characteristic.value;
+            [self.mLabelName setText:[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]];
+            
+            [peripheral setNotifyValue:YES forCharacteristic:characteristic];
+        }
     }
+}
+
+- (void)peripheral:(CBPeripheral *)peripheral didUpdateNotificationStateForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
+{
+    [peripheral readValueForCharacteristic:characteristic];
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
 {
-    if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"FF06"]])
+    if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:(NSString*)UUID_CHARACTER]])
     {
-        NSLog(@"didUpdateValueForCharacteristic %@:%@", characteristic, characteristic.value);
+        NSLog(@"didUpdateValueForCharacteristic");
+        
+        NSData *data = characteristic.value;
+
+        NSString *strValue = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        [self.mLabelName setText:strValue];
     }
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverDescriptorsForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
 {
     NSLog(@"didDiscoverDescriptorsForCharacteristic==%@:%@", error, characteristic.descriptors);
-    [GJBlueToothCopier writeToLocalFile:characteristic value:characteristic.value];
+//    [GJBlueToothCopier writeToLocalFile:characteristic value:characteristic.value];
+    for (CBDescriptor *descriptor in characteristic.descriptors)
+    {
+        [peripheral readValueForDescriptor:descriptor];
+    }
+
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForDescriptor:(CBDescriptor *)descriptor error:(NSError *)error

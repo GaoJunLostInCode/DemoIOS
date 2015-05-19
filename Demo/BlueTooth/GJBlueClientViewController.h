@@ -6,8 +6,10 @@
 //  Copyright (c) 2015年 gaojun. All rights reserved.
 //
 
-@import CoreBluetooth;
 #import <UIKit/UIKit.h>
+#import "ConstBlueTooth.h"
+@import CoreBluetooth;
+
 
 @interface GJBlueClientViewController : UIViewController
 

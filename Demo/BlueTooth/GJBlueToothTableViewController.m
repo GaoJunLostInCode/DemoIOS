@@ -13,6 +13,7 @@
 @interface GJBlueToothTableViewController ()<CBCentralManagerDelegate, CBPeripheralDelegate>
 @property (nonatomic) NSMutableArray *mArrPeripherals;
 @property (nonatomic) CBCentralManager *mCentralManager;
+@property (nonatomic) CBPeripheral *mPeripheralConnected;
 @end
 
 @implementation GJBlueToothTableViewController
@@ -145,6 +146,38 @@
 #pragma mark CBCentralManager Delegate
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central
 {
+    NSMutableString* nsmstring=[NSMutableString stringWithString:@"UpdateState:"];
+    BOOL isWork=FALSE;
+    switch (central.state) {
+        case CBCentralManagerStateUnknown:
+            [nsmstring appendString:@"Unknown\n"];
+            break;
+        case CBCentralManagerStateUnsupported:
+            [nsmstring appendString:@"Unsupported\n"];
+            break;
+        case CBCentralManagerStateUnauthorized:
+            [nsmstring appendString:@"Unauthorized\n"];
+            break;
+        case CBCentralManagerStateResetting:
+            [nsmstring appendString:@"Resetting\n"];
+            break;
+        case CBCentralManagerStatePoweredOff:
+            [nsmstring appendString:@"PoweredOff\n"];
+
+            if (self.mPeripheralConnected != nil)
+            {
+                [central cancelPeripheralConnection:self.mPeripheralConnected];
+            }
+            break;
+        case CBCentralManagerStatePoweredOn:
+            [nsmstring appendString:@"PoweredOn\n"];
+            isWork=TRUE;
+            break;
+        default:
+            [nsmstring appendString:@"none\n"];
+            break;
+    }
+    NSLog(@"%@",nsmstring);
 
 }
 
@@ -160,6 +193,8 @@
 
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral
 {
+    self.mPeripheralConnected = peripheral;
+    
     GJBlueClientViewController *detailViewController = [[GJBlueClientViewController alloc] initWithNibName:@"GJBlueClientViewController" bundle:nil];
 //    GJBlueToothCopyViewController *detailViewController = [[GJBlueToothCopyViewController alloc] initWithNibName:@"GJBlueToothCopyViewController" bundle:nil];
     
@@ -171,3 +206,8 @@
 
 
 @end
+
+
+
+
+

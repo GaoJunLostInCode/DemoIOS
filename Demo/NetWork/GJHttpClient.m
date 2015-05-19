@@ -12,9 +12,17 @@ static const NSInteger kGJDownloaderTimeOut = 5;
 
 @implementation GJHttpClient
 
+- (void)getWithWholeUrl:(NSString*)wholeUrl completedOnMainThread:(GJHttpClientCompletedHandler)handler
+{
+    NSURL *url = [NSURL URLWithString:wholeUrl];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:handler];
+}
+
 - (void)post:(NSDictionary*)dicParams toUrl: (NSString*)toUrl completedHandler:(GJHttpClientCompletedHandler)handler
 {
-    toUrl = @"http://localhost:8080/httpTest/json/testJson";
+//    toUrl = @"http://localhost:8080/httpTest/json/testJson";
     NSDate *tmpStartData = [NSDate date];
     NSMutableDictionary *dicData = [[NSMutableDictionary alloc] initWithObjectsAndKeys:dicParams, @"dicParams", nil];
     [dicData setValue:toUrl forKey:@"toUrl"];

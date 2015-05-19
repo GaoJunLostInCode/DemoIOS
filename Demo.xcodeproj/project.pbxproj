@@ -7,14 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E10129F91ACA84C000D99724 /* GJBlueToothTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10129F71ACA84C000D99724 /* GJBlueToothTableViewController.m */; };
+		E10129FA1ACA84C000D99724 /* GJBlueToothTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E10129F81ACA84C000D99724 /* GJBlueToothTableViewController.xib */; };
+		E10129FE1ACA8CC100D99724 /* GJBlueClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10129FC1ACA8CC100D99724 /* GJBlueClientViewController.m */; };
+		E10129FF1ACA8CC100D99724 /* GJBlueClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E10129FD1ACA8CC100D99724 /* GJBlueClientViewController.xib */; };
+		E114A7FD1ADE17B7001BC548 /* GJShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E114A7FB1ADE17B7001BC548 /* GJShakeViewController.m */; };
+		E114A7FE1ADE17B7001BC548 /* GJShakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E114A7FC1ADE17B7001BC548 /* GJShakeViewController.xib */; };
+		E114A8001ADE1946001BC548 /* shake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E114A7FF1ADE1946001BC548 /* shake.mp3 */; };
+		E114A8031ADE63B7001BC548 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E114A8011ADE63B7001BC548 /* Model.xcdatamodeld */; };
+		E114A8061ADE6464001BC548 /* NSManagedObjectContext_GJFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E114A8051ADE6464001BC548 /* NSManagedObjectContext_GJFactory.m */; };
+		E114A80F1ADE6F87001BC548 /* GJCoreDataTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E114A80D1ADE6F87001BC548 /* GJCoreDataTabViewController.m */; };
+		E114A8101ADE6F87001BC548 /* GJCoreDataTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E114A80E1ADE6F87001BC548 /* GJCoreDataTabViewController.xib */; };
+		E114A8141ADE7032001BC548 /* GJBookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E114A8121ADE7032001BC548 /* GJBookTableViewController.m */; };
+		E114A8151ADE7032001BC548 /* GJBookTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E114A8131ADE7032001BC548 /* GJBookTableViewController.xib */; };
+		E114A8191ADE7048001BC548 /* GJAuthorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E114A8171ADE7048001BC548 /* GJAuthorTableViewController.m */; };
+		E114A81A1ADE7048001BC548 /* GJAuthorTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E114A8181ADE7048001BC548 /* GJAuthorTableViewController.xib */; };
+		E114A81D1ADE74C4001BC548 /* GJBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E114A81C1ADE74C4001BC548 /* GJBaseTableViewController.m */; };
 		E1523D4D1AB67E8900E46170 /* GJCacheImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E1523D4C1AB67E8900E46170 /* GJCacheImage.m */; };
+		E171FA0D1ACB81AF004BA2E7 /* GJBlueServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E171FA0B1ACB81AF004BA2E7 /* GJBlueServerViewController.m */; };
+		E171FA0E1ACB81AF004BA2E7 /* GJBlueServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E171FA0C1ACB81AF004BA2E7 /* GJBlueServerViewController.xib */; };
+		E171FA121ACBE704004BA2E7 /* GJBlueToothCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E171FA101ACBE704004BA2E7 /* GJBlueToothCopyViewController.m */; };
+		E171FA131ACBE704004BA2E7 /* GJBlueToothCopyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E171FA111ACBE704004BA2E7 /* GJBlueToothCopyViewController.xib */; };
 		E17960D51AB96B95006512D6 /* GJCustomZBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17960D21AB96B95006512D6 /* GJCustomZBarViewController.m */; };
 		E17960D61AB96B95006512D6 /* GJCustomZBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17960D31AB96B95006512D6 /* GJCustomZBarViewController.xib */; };
 		E17960DA1AB96C81006512D6 /* GJZBarTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17960D81AB96C81006512D6 /* GJZBarTestViewController.m */; };
 		E17960DB1AB96C81006512D6 /* GJZBarTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17960D91AB96C81006512D6 /* GJZBarTestViewController.xib */; };
 		E17960DE1AB972D8006512D6 /* GJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17960DD1AB972D8006512D6 /* GJBaseViewController.m */; };
+		E17BA2971AEC887300020149 /* GJSessionHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E17BA2961AEC887300020149 /* GJSessionHttpClient.m */; };
 		E1C26B0B1AC69F3A00B6F7CF /* GJBeaconBroadcaster.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C26B0A1AC69F3A00B6F7CF /* GJBeaconBroadcaster.m */; };
 		E1C26B0E1AC6A17000B6F7CF /* GJBeaconDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C26B0D1AC6A17000B6F7CF /* GJBeaconDetector.m */; };
+		E1C5C3851ACCD6D200E2C548 /* GJBlueToothCopier.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C5C3841ACCD6D200E2C548 /* GJBlueToothCopier.m */; };
+		E1CDCB1E1B019EDA0061EFD1 /* GJImageFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CDCB1D1B019EDA0061EFD1 /* GJImageFileManager.m */; };
 		E1D2EBF71A9412A80048F8B1 /* GJExpendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D2EBF51A9412A80048F8B1 /* GJExpendTableViewCell.m */; };
 		E1D2EBF81A9412A80048F8B1 /* GJExpendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D2EBF61A9412A80048F8B1 /* GJExpendTableViewCell.xib */; };
 		E1D5918D1AC4FA0C0029FFBD /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E1D5916D1AC4FA0C0029FFBD /* .gitignore */; };
@@ -38,10 +61,15 @@
 		E1D591B41AC54C150029FFBD /* GJiBeanconTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D591B21AC54C150029FFBD /* GJiBeanconTestViewController.xib */; };
 		E1D5B1081AAAE8B3009A759F /* GJNetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D5B1061AAAE8B3009A759F /* GJNetWorkViewController.m */; };
 		E1D5B1091AAAE8B3009A759F /* GJNetWorkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D5B1071AAAE8B3009A759F /* GJNetWorkViewController.xib */; };
-		E1F0CAEB1AADB87500E80A71 /* GJImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F0CAEA1AADB87500E80A71 /* GJImageUtils.m */; };
 		E1F20BEE1AB03B9B0059EA53 /* GJHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F20BED1AB03B9B0059EA53 /* GJHttpClient.m */; };
 		E1F20BF21AB04BC00059EA53 /* GJParamBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F20BF11AB04BC00059EA53 /* GJParamBase.m */; };
 		E1F20BF51AB04C5F0059EA53 /* GJParamTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F20BF41AB04C5F0059EA53 /* GJParamTest.m */; };
+		E1F3141B1B0ACB17008346E1 /* NSArray_Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F314121B0ACB17008346E1 /* NSArray_Ext.m */; };
+		E1F3141C1B0ACB17008346E1 /* NSDate_StringFormater.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F314141B0ACB17008346E1 /* NSDate_StringFormater.m */; };
+		E1F3141D1B0ACB17008346E1 /* NSManageObjectContext_GJFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F314161B0ACB17008346E1 /* NSManageObjectContext_GJFactory.m */; };
+		E1F3141E1B0ACB17008346E1 /* NSObject_JsonConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F314181B0ACB17008346E1 /* NSObject_JsonConverter.m */; };
+		E1F3141F1B0ACB17008346E1 /* NSString_Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F3141A1B0ACB17008346E1 /* NSString_Ext.m */; };
+		E1F314261B0AD19E008346E1 /* GJImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F314251B0AD19E008346E1 /* GJImageUtils.m */; };
 		E1FF72871A92B71A0036777A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1FF72861A92B71A0036777A /* main.m */; };
 		E1FF728A1A92B71A0036777A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1FF72891A92B71A0036777A /* AppDelegate.m */; };
 		E1FF728D1A92B71A0036777A /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1FF728C1A92B71A0036777A /* MasterViewController.m */; };
@@ -71,8 +99,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E10129F61ACA84C000D99724 /* GJBlueToothTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJBlueToothTableViewController.h; sourceTree = "<group>"; };
+		E10129F71ACA84C000D99724 /* GJBlueToothTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJBlueToothTableViewController.m; sourceTree = "<group>"; };
+		E10129F81ACA84C000D99724 /* GJBlueToothTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJBlueToothTableViewController.xib; sourceTree = "<group>"; };
+		E10129FB1ACA8CC100D99724 /* GJBlueClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJBlueClientViewController.h; sourceTree = "<group>"; };
+		E10129FC1ACA8CC100D99724 /* GJBlueClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJBlueClientViewController.m; sourceTree = "<group>"; };
+		E10129FD1ACA8CC100D99724 /* GJBlueClientViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJBlueClientViewController.xib; sourceTree = "<group>"; };
+		E114A7FA1ADE17B7001BC548 /* GJShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJShakeViewController.h; sourceTree = "<group>"; };
+		E114A7FB1ADE17B7001BC548 /* GJShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJShakeViewController.m; sourceTree = "<group>"; };
+		E114A7FC1ADE17B7001BC548 /* GJShakeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJShakeViewController.xib; sourceTree = "<group>"; };
+		E114A7FF1ADE1946001BC548 /* shake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shake.mp3; sourceTree = "<group>"; };
+		E114A8021ADE63B7001BC548 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		E114A8041ADE6464001BC548 /* NSManagedObjectContext_GJFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSManagedObjectContext_GJFactory.h; sourceTree = "<group>"; };
+		E114A8051ADE6464001BC548 /* NSManagedObjectContext_GJFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSManagedObjectContext_GJFactory.m; sourceTree = "<group>"; };
+		E114A80C1ADE6F87001BC548 /* GJCoreDataTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJCoreDataTabViewController.h; sourceTree = "<group>"; };
+		E114A80D1ADE6F87001BC548 /* GJCoreDataTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJCoreDataTabViewController.m; sourceTree = "<group>"; };
+		E114A80E1ADE6F87001BC548 /* GJCoreDataTabViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJCoreDataTabViewController.xib; sourceTree = "<group>"; };
+		E114A8111ADE7032001BC548 /* GJBookTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJBookTableViewController.h; sourceTree = "<group>"; };
+		E114A8121ADE7032001BC548 /* GJBookTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJBookTableViewController.m; sourceTree = "<group>"; };
+		E114A8131ADE7032001BC548 /* GJBookTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJBookTableViewController.xib; sourceTree = "<group>"; };
+		E114A8161ADE7048001BC548 /* GJAuthorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJAuthorTableViewController.h; sourceTree = "<group>"; };
+		E114A8171ADE7048001BC548 /* GJAuthorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJAuthorTableViewController.m; sourceTree = "<group>"; };
+		E114A8181ADE7048001BC548 /* GJAuthorTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJAuthorTableViewController.xib; sourceTree = "<group>"; };
+		E114A81B1ADE74C4001BC548 /* GJBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJBaseTableViewController.h; sourceTree = "<group>"; };
+		E114A81C1ADE74C4001BC548 /* GJBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJBaseTableViewController.m; sourceTree = "<group>"; };
 		E1523D4B1AB67E8900E46170 /* GJCacheImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJCacheImage.h; sourceTree = "<group>"; };
 		E1523D4C1AB67E8900E46170 /* GJCacheImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJCacheImage.m; sourceTree = "<group>"; };
+		E16B83C41B097453001BEFEB /* ConstBlueTooth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstBlueTooth.h; sourceTree = "<group>"; };
+		E171FA0A1ACB81AF004BA2E7 /* GJBlueServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJBlueServerViewController.h; sourceTree = "<group>"; };
+		E171FA0B1ACB81AF004BA2E7 /* GJBlueServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJBlueServerViewController.m; sourceTree = "<group>"; };
+		E171FA0C1ACB81AF004BA2E7 /* GJBlueServerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJBlueServerViewController.xib; sourceTree = "<group>"; };
+		E171FA0F1ACBE704004BA2E7 /* GJBlueToothCopyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJBlueToothCopyViewController.h; sourceTree = "<group>"; };
+		E171FA101ACBE704004BA2E7 /* GJBlueToothCopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJBlueToothCopyViewController.m; sourceTree = "<group>"; };
+		E171FA111ACBE704004BA2E7 /* GJBlueToothCopyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJBlueToothCopyViewController.xib; sourceTree = "<group>"; };
 		E17960D11AB96B95006512D6 /* GJCustomZBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJCustomZBarViewController.h; sourceTree = "<group>"; };
 		E17960D21AB96B95006512D6 /* GJCustomZBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJCustomZBarViewController.m; sourceTree = "<group>"; };
 		E17960D31AB96B95006512D6 /* GJCustomZBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJCustomZBarViewController.xib; sourceTree = "<group>"; };
@@ -81,10 +140,16 @@
 		E17960D91AB96C81006512D6 /* GJZBarTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJZBarTestViewController.xib; sourceTree = "<group>"; };
 		E17960DC1AB972D8006512D6 /* GJBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJBaseViewController.h; sourceTree = "<group>"; };
 		E17960DD1AB972D8006512D6 /* GJBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJBaseViewController.m; sourceTree = "<group>"; };
+		E17BA2951AEC887300020149 /* GJSessionHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJSessionHttpClient.h; sourceTree = "<group>"; };
+		E17BA2961AEC887300020149 /* GJSessionHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJSessionHttpClient.m; sourceTree = "<group>"; };
 		E1C26B091AC69F3A00B6F7CF /* GJBeaconBroadcaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJBeaconBroadcaster.h; sourceTree = "<group>"; };
 		E1C26B0A1AC69F3A00B6F7CF /* GJBeaconBroadcaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJBeaconBroadcaster.m; sourceTree = "<group>"; };
 		E1C26B0C1AC6A17000B6F7CF /* GJBeaconDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJBeaconDetector.h; sourceTree = "<group>"; };
 		E1C26B0D1AC6A17000B6F7CF /* GJBeaconDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJBeaconDetector.m; sourceTree = "<group>"; };
+		E1C5C3831ACCD6D200E2C548 /* GJBlueToothCopier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJBlueToothCopier.h; sourceTree = "<group>"; };
+		E1C5C3841ACCD6D200E2C548 /* GJBlueToothCopier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJBlueToothCopier.m; sourceTree = "<group>"; };
+		E1CDCB1C1B019EDA0061EFD1 /* GJImageFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJImageFileManager.h; sourceTree = "<group>"; };
+		E1CDCB1D1B019EDA0061EFD1 /* GJImageFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJImageFileManager.m; sourceTree = "<group>"; };
 		E1D2EBF41A9412A80048F8B1 /* GJExpendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJExpendTableViewCell.h; sourceTree = "<group>"; };
 		E1D2EBF51A9412A80048F8B1 /* GJExpendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJExpendTableViewCell.m; sourceTree = "<group>"; };
 		E1D2EBF61A9412A80048F8B1 /* GJExpendTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJExpendTableViewCell.xib; sourceTree = "<group>"; };
@@ -131,14 +196,24 @@
 		E1D5B1051AAAE8B3009A759F /* GJNetWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJNetWorkViewController.h; sourceTree = "<group>"; };
 		E1D5B1061AAAE8B3009A759F /* GJNetWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJNetWorkViewController.m; sourceTree = "<group>"; };
 		E1D5B1071AAAE8B3009A759F /* GJNetWorkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJNetWorkViewController.xib; sourceTree = "<group>"; };
-		E1F0CAE91AADB87500E80A71 /* GJImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJImageUtils.h; sourceTree = "<group>"; };
-		E1F0CAEA1AADB87500E80A71 /* GJImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJImageUtils.m; sourceTree = "<group>"; };
 		E1F20BEC1AB03B9B0059EA53 /* GJHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJHttpClient.h; sourceTree = "<group>"; };
 		E1F20BED1AB03B9B0059EA53 /* GJHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJHttpClient.m; sourceTree = "<group>"; };
 		E1F20BF01AB04BC00059EA53 /* GJParamBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJParamBase.h; sourceTree = "<group>"; };
 		E1F20BF11AB04BC00059EA53 /* GJParamBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJParamBase.m; sourceTree = "<group>"; };
 		E1F20BF31AB04C5F0059EA53 /* GJParamTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJParamTest.h; sourceTree = "<group>"; };
 		E1F20BF41AB04C5F0059EA53 /* GJParamTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJParamTest.m; sourceTree = "<group>"; };
+		E1F314111B0ACB17008346E1 /* NSArray_Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArray_Ext.h; sourceTree = "<group>"; };
+		E1F314121B0ACB17008346E1 /* NSArray_Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArray_Ext.m; sourceTree = "<group>"; };
+		E1F314131B0ACB17008346E1 /* NSDate_StringFormater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDate_StringFormater.h; sourceTree = "<group>"; };
+		E1F314141B0ACB17008346E1 /* NSDate_StringFormater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDate_StringFormater.m; sourceTree = "<group>"; };
+		E1F314151B0ACB17008346E1 /* NSManageObjectContext_GJFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSManageObjectContext_GJFactory.h; sourceTree = "<group>"; };
+		E1F314161B0ACB17008346E1 /* NSManageObjectContext_GJFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSManageObjectContext_GJFactory.m; sourceTree = "<group>"; };
+		E1F314171B0ACB17008346E1 /* NSObject_JsonConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObject_JsonConverter.h; sourceTree = "<group>"; };
+		E1F314181B0ACB17008346E1 /* NSObject_JsonConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObject_JsonConverter.m; sourceTree = "<group>"; };
+		E1F314191B0ACB17008346E1 /* NSString_Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_Ext.h; sourceTree = "<group>"; };
+		E1F3141A1B0ACB17008346E1 /* NSString_Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_Ext.m; sourceTree = "<group>"; };
+		E1F314241B0AD19E008346E1 /* GJImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJImageUtils.h; sourceTree = "<group>"; };
+		E1F314251B0AD19E008346E1 /* GJImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJImageUtils.m; sourceTree = "<group>"; };
 		E1FF72811A92B71A0036777A /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1FF72851A92B71A0036777A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1FF72861A92B71A0036777A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -197,11 +272,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E10129F51ACA849500D99724 /* BlueTooth */ = {
+			isa = PBXGroup;
+			children = (
+				E16B83C41B097453001BEFEB /* ConstBlueTooth.h */,
+				E10129F61ACA84C000D99724 /* GJBlueToothTableViewController.h */,
+				E10129F71ACA84C000D99724 /* GJBlueToothTableViewController.m */,
+				E10129F81ACA84C000D99724 /* GJBlueToothTableViewController.xib */,
+				E10129FB1ACA8CC100D99724 /* GJBlueClientViewController.h */,
+				E10129FC1ACA8CC100D99724 /* GJBlueClientViewController.m */,
+				E10129FD1ACA8CC100D99724 /* GJBlueClientViewController.xib */,
+				E171FA0A1ACB81AF004BA2E7 /* GJBlueServerViewController.h */,
+				E171FA0B1ACB81AF004BA2E7 /* GJBlueServerViewController.m */,
+				E171FA0C1ACB81AF004BA2E7 /* GJBlueServerViewController.xib */,
+				E171FA0F1ACBE704004BA2E7 /* GJBlueToothCopyViewController.h */,
+				E171FA101ACBE704004BA2E7 /* GJBlueToothCopyViewController.m */,
+				E171FA111ACBE704004BA2E7 /* GJBlueToothCopyViewController.xib */,
+				E1C5C3831ACCD6D200E2C548 /* GJBlueToothCopier.h */,
+				E1C5C3841ACCD6D200E2C548 /* GJBlueToothCopier.m */,
+			);
+			path = BlueTooth;
+			sourceTree = "<group>";
+		};
+		E114A7F81ADE174A001BC548 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E114A8011ADE63B7001BC548 /* Model.xcdatamodeld */,
+				E114A8041ADE6464001BC548 /* NSManagedObjectContext_GJFactory.h */,
+				E114A8051ADE6464001BC548 /* NSManagedObjectContext_GJFactory.m */,
+				E114A80C1ADE6F87001BC548 /* GJCoreDataTabViewController.h */,
+				E114A80D1ADE6F87001BC548 /* GJCoreDataTabViewController.m */,
+				E114A80E1ADE6F87001BC548 /* GJCoreDataTabViewController.xib */,
+				E114A81B1ADE74C4001BC548 /* GJBaseTableViewController.h */,
+				E114A81C1ADE74C4001BC548 /* GJBaseTableViewController.m */,
+				E114A8111ADE7032001BC548 /* GJBookTableViewController.h */,
+				E114A8121ADE7032001BC548 /* GJBookTableViewController.m */,
+				E114A8131ADE7032001BC548 /* GJBookTableViewController.xib */,
+				E114A8161ADE7048001BC548 /* GJAuthorTableViewController.h */,
+				E114A8171ADE7048001BC548 /* GJAuthorTableViewController.m */,
+				E114A8181ADE7048001BC548 /* GJAuthorTableViewController.xib */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		E114A7F91ADE1772001BC548 /* Shake */ = {
+			isa = PBXGroup;
+			children = (
+				E114A7FF1ADE1946001BC548 /* shake.mp3 */,
+				E114A7FA1ADE17B7001BC548 /* GJShakeViewController.h */,
+				E114A7FB1ADE17B7001BC548 /* GJShakeViewController.m */,
+				E114A7FC1ADE17B7001BC548 /* GJShakeViewController.xib */,
+			);
+			path = Shake;
+			sourceTree = "<group>";
+		};
 		E1523D4E1AB68AE500E46170 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E16B83C51B09C796001BEFEB /* MyFrameWork */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		E16B83C51B09C796001BEFEB /* MyFrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				E1F314271B0AD2BA008346E1 /* NetWork */,
+				E1F314201B0AD105008346E1 /* Utils */,
+				E1F314101B0ACB17008346E1 /* Extention */,
+			);
+			path = MyFrameWork;
 			sourceTree = "<group>";
 		};
 		E17960A01AB96B05006512D6 /* CustomZBar */ = {
@@ -327,6 +467,8 @@
 				E1F20BED1AB03B9B0059EA53 /* GJHttpClient.m */,
 				E1523D4B1AB67E8900E46170 /* GJCacheImage.h */,
 				E1523D4C1AB67E8900E46170 /* GJCacheImage.m */,
+				E17BA2951AEC887300020149 /* GJSessionHttpClient.h */,
+				E17BA2961AEC887300020149 /* GJSessionHttpClient.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -340,6 +482,39 @@
 				E1F20BF41AB04C5F0059EA53 /* GJParamTest.m */,
 			);
 			path = Param;
+			sourceTree = "<group>";
+		};
+		E1F314101B0ACB17008346E1 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				E1F314111B0ACB17008346E1 /* NSArray_Ext.h */,
+				E1F314121B0ACB17008346E1 /* NSArray_Ext.m */,
+				E1F314131B0ACB17008346E1 /* NSDate_StringFormater.h */,
+				E1F314141B0ACB17008346E1 /* NSDate_StringFormater.m */,
+				E1F314151B0ACB17008346E1 /* NSManageObjectContext_GJFactory.h */,
+				E1F314161B0ACB17008346E1 /* NSManageObjectContext_GJFactory.m */,
+				E1F314171B0ACB17008346E1 /* NSObject_JsonConverter.h */,
+				E1F314181B0ACB17008346E1 /* NSObject_JsonConverter.m */,
+				E1F314191B0ACB17008346E1 /* NSString_Ext.h */,
+				E1F3141A1B0ACB17008346E1 /* NSString_Ext.m */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		E1F314201B0AD105008346E1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E1F314241B0AD19E008346E1 /* GJImageUtils.h */,
+				E1F314251B0AD19E008346E1 /* GJImageUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E1F314271B0AD2BA008346E1 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 		E1FF72781A92B71A0036777A = {
@@ -364,6 +539,9 @@
 		E1FF72831A92B71A0036777A /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				E114A7F91ADE1772001BC548 /* Shake */,
+				E114A7F81ADE174A001BC548 /* CoreData */,
+				E10129F51ACA849500D99724 /* BlueTooth */,
 				E1D591A61AC50E2C0029FFBD /* iBeacon */,
 				E17960A01AB96B05006512D6 /* CustomZBar */,
 				E1523D4E1AB68AE500E46170 /* Common */,
@@ -437,8 +615,8 @@
 			children = (
 				E1FF72B21A92BA950036777A /* SettingsUtil.h */,
 				E1FF72B31A92BA950036777A /* SettingsUtil.m */,
-				E1F0CAE91AADB87500E80A71 /* GJImageUtils.h */,
-				E1F0CAEA1AADB87500E80A71 /* GJImageUtils.m */,
+				E1CDCB1C1B019EDA0061EFD1 /* GJImageFileManager.h */,
+				E1CDCB1D1B019EDA0061EFD1 /* GJImageFileManager.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -524,7 +702,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1D591B41AC54C150029FFBD /* GJiBeanconTestViewController.xib in Resources */,
+				E10129FF1ACA8CC100D99724 /* GJBlueClientViewController.xib in Resources */,
 				E1D5918F1AC4FA0C0029FFBD /* README in Resources */,
+				E114A8151ADE7032001BC548 /* GJBookTableViewController.xib in Resources */,
 				E1D591911AC4FA0C0029FFBD /* zbar-help.html in Resources */,
 				E1FF72931A92B71A0036777A /* Main.storyboard in Resources */,
 				E1FF72CF1A92C5310036777A /* GJExpendTableViewController.xib in Resources */,
@@ -532,13 +712,20 @@
 				E1FF72B61A92BAA90036777A /* ExpendTableView.plist in Resources */,
 				E1D591921AC4FA0C0029FFBD /* zbar-helpicons.png in Resources */,
 				E1D5918D1AC4FA0C0029FFBD /* .gitignore in Resources */,
+				E114A8101ADE6F87001BC548 /* GJCoreDataTabViewController.xib in Resources */,
 				E1D591931AC4FA0C0029FFBD /* zbar-samples.png in Resources */,
 				E1FF72981A92B71A0036777A /* LaunchScreen.xib in Resources */,
 				E1FF72951A92B71A0036777A /* Images.xcassets in Resources */,
+				E114A7FE1ADE17B7001BC548 /* GJShakeViewController.xib in Resources */,
 				E17960D61AB96B95006512D6 /* GJCustomZBarViewController.xib in Resources */,
 				E1D591901AC4FA0C0029FFBD /* zbar-back.png in Resources */,
+				E10129FA1ACA84C000D99724 /* GJBlueToothTableViewController.xib in Resources */,
+				E114A81A1ADE7048001BC548 /* GJAuthorTableViewController.xib in Resources */,
 				E1FF72C31A92BF190036777A /* GJExpendHeaderView.xib in Resources */,
+				E171FA0E1ACB81AF004BA2E7 /* GJBlueServerViewController.xib in Resources */,
+				E114A8001ADE1946001BC548 /* shake.mp3 in Resources */,
 				E1FF72B81A92BBE90036777A /* settings.plist in Resources */,
+				E171FA131ACBE704004BA2E7 /* GJBlueToothCopyViewController.xib in Resources */,
 				E1D5B1091AAAE8B3009A759F /* GJNetWorkViewController.xib in Resources */,
 				E17960DB1AB96C81006512D6 /* GJZBarTestViewController.xib in Resources */,
 			);
@@ -561,24 +748,43 @@
 				E1F20BF51AB04C5F0059EA53 /* GJParamTest.m in Sources */,
 				E1523D4D1AB67E8900E46170 /* GJCacheImage.m in Sources */,
 				E1D5B1081AAAE8B3009A759F /* GJNetWorkViewController.m in Sources */,
+				E114A8191ADE7048001BC548 /* GJAuthorTableViewController.m in Sources */,
+				E114A8031ADE63B7001BC548 /* Model.xcdatamodeld in Sources */,
+				E114A8061ADE6464001BC548 /* NSManagedObjectContext_GJFactory.m in Sources */,
 				E1C26B0E1AC6A17000B6F7CF /* GJBeaconDetector.m in Sources */,
 				E17960DA1AB96C81006512D6 /* GJZBarTestViewController.m in Sources */,
 				E1FF728A1A92B71A0036777A /* AppDelegate.m in Sources */,
-				E1F0CAEB1AADB87500E80A71 /* GJImageUtils.m in Sources */,
+				E10129F91ACA84C000D99724 /* GJBlueToothTableViewController.m in Sources */,
+				E1CDCB1E1B019EDA0061EFD1 /* GJImageFileManager.m in Sources */,
+				E10129FE1ACA8CC100D99724 /* GJBlueClientViewController.m in Sources */,
 				E1D2EBF71A9412A80048F8B1 /* GJExpendTableViewCell.m in Sources */,
 				E1FF72B41A92BA950036777A /* SettingsUtil.m in Sources */,
+				E1F3141D1B0ACB17008346E1 /* NSManageObjectContext_GJFactory.m in Sources */,
+				E17BA2971AEC887300020149 /* GJSessionHttpClient.m in Sources */,
+				E171FA121ACBE704004BA2E7 /* GJBlueToothCopyViewController.m in Sources */,
 				E17960DE1AB972D8006512D6 /* GJBaseViewController.m in Sources */,
 				E1FF728D1A92B71A0036777A /* MasterViewController.m in Sources */,
+				E1F3141B1B0ACB17008346E1 /* NSArray_Ext.m in Sources */,
 				E1FF72BE1A92BE7D0036777A /* GJCellInfo.m in Sources */,
 				E1FF72CE1A92C5310036777A /* GJExpendTableViewController.m in Sources */,
+				E171FA0D1ACB81AF004BA2E7 /* GJBlueServerViewController.m in Sources */,
+				E1C5C3851ACCD6D200E2C548 /* GJBlueToothCopier.m in Sources */,
+				E1F3141F1B0ACB17008346E1 /* NSString_Ext.m in Sources */,
+				E114A80F1ADE6F87001BC548 /* GJCoreDataTabViewController.m in Sources */,
 				E17960D51AB96B95006512D6 /* GJCustomZBarViewController.m in Sources */,
+				E1F3141C1B0ACB17008346E1 /* NSDate_StringFormater.m in Sources */,
+				E114A8141ADE7032001BC548 /* GJBookTableViewController.m in Sources */,
 				E1FF72BB1A92BE6A0036777A /* GJSectionInfo.m in Sources */,
 				E1F20BEE1AB03B9B0059EA53 /* GJHttpClient.m in Sources */,
+				E114A81D1ADE74C4001BC548 /* GJBaseTableViewController.m in Sources */,
+				E1F314261B0AD19E008346E1 /* GJImageUtils.m in Sources */,
 				E1D591B31AC54C150029FFBD /* GJiBeanconTestViewController.m in Sources */,
 				E1C26B0B1AC69F3A00B6F7CF /* GJBeaconBroadcaster.m in Sources */,
 				E1FF72C11A92BEFB0036777A /* GJExpendHeaderView.m in Sources */,
+				E1F3141E1B0ACB17008346E1 /* NSObject_JsonConverter.m in Sources */,
 				E1F20BF21AB04BC00059EA53 /* GJParamBase.m in Sources */,
 				E1FF72871A92B71A0036777A /* main.m in Sources */,
+				E114A7FD1ADE17B7001BC548 /* GJShakeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,6 +999,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E114A8011ADE63B7001BC548 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E114A8021ADE63B7001BC548 /* Model.xcdatamodel */,
+			);
+			currentVersion = E114A8021ADE63B7001BC548 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E1FF72791A92B71A0036777A /* Project object */;
 }

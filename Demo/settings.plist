@@ -46,6 +46,12 @@
 			<key>ControllerName</key>
 			<string>GJShakeViewController</string>
 		</dict>
+		<dict>
+			<key>DemoName</key>
+			<string>CoreData</string>
+			<key>ControllerName</key>
+			<string>GJCoreDataTabViewController</string>
+		</dict>
 	</array>
 </dict>
 </plist>

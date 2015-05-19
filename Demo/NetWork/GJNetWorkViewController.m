@@ -9,6 +9,7 @@
 #import "GJNetWorkViewController.h"
 #import "GJHttpClient.h"
 #import "GJParamTest.h"
+#import "GJSessionHttpClient.h"
 
 
 @interface GJNetWorkViewController ()
@@ -64,14 +65,17 @@
 
 - (IBAction)onUploadClicked:(id)sender
 {
-    NSData *data = [[NSData alloc] initWithContentsOfFile:[self getFileDownloadedPath]];
-    GJHttpClient *client = [[GJHttpClient alloc] init];
+//    NSData *data = [[NSData alloc] initWithContentsOfFile:[self getFileDownloadedPath]];
+//    GJHttpClient *client = [[GJHttpClient alloc] init];
+//    
+//    [client upload:@"" postParams:nil data:data fileName:@"abcd.png" completedHandler:
+//        ^(NSURLResponse *response, NSData *data, NSError *error)
+//        {
+//            NSLog(@"upload response:%@ error:%@", response, error);
+//        }];
     
-    [client upload:@"" postParams:nil data:data fileName:@"abcd.png" completedHandler:
-        ^(NSURLResponse *response, NSData *data, NSError *error)
-        {
-            NSLog(@"upload response:%@ error:%@", response, error);
-        }];
+    GJSessionHttpClient *client = [[GJSessionHttpClient alloc] init];
+    [client upload];
 }
 
 - (IBAction)onTestJsonClicked:(id)sender
