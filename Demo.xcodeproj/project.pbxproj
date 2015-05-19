@@ -23,7 +23,6 @@
 		E114A8191ADE7048001BC548 /* GJAuthorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E114A8171ADE7048001BC548 /* GJAuthorTableViewController.m */; };
 		E114A81A1ADE7048001BC548 /* GJAuthorTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E114A8181ADE7048001BC548 /* GJAuthorTableViewController.xib */; };
 		E114A81D1ADE74C4001BC548 /* GJBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E114A81C1ADE74C4001BC548 /* GJBaseTableViewController.m */; };
-		E1523D4D1AB67E8900E46170 /* GJCacheImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E1523D4C1AB67E8900E46170 /* GJCacheImage.m */; };
 		E171FA0D1ACB81AF004BA2E7 /* GJBlueServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E171FA0B1ACB81AF004BA2E7 /* GJBlueServerViewController.m */; };
 		E171FA0E1ACB81AF004BA2E7 /* GJBlueServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E171FA0C1ACB81AF004BA2E7 /* GJBlueServerViewController.xib */; };
 		E171FA121ACBE704004BA2E7 /* GJBlueToothCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E171FA101ACBE704004BA2E7 /* GJBlueToothCopyViewController.m */; };
@@ -61,7 +60,6 @@
 		E1D591B41AC54C150029FFBD /* GJiBeanconTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D591B21AC54C150029FFBD /* GJiBeanconTestViewController.xib */; };
 		E1D5B1081AAAE8B3009A759F /* GJNetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D5B1061AAAE8B3009A759F /* GJNetWorkViewController.m */; };
 		E1D5B1091AAAE8B3009A759F /* GJNetWorkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D5B1071AAAE8B3009A759F /* GJNetWorkViewController.xib */; };
-		E1F20BEE1AB03B9B0059EA53 /* GJHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F20BED1AB03B9B0059EA53 /* GJHttpClient.m */; };
 		E1F20BF21AB04BC00059EA53 /* GJParamBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F20BF11AB04BC00059EA53 /* GJParamBase.m */; };
 		E1F20BF51AB04C5F0059EA53 /* GJParamTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F20BF41AB04C5F0059EA53 /* GJParamTest.m */; };
 		E1F3141B1B0ACB17008346E1 /* NSArray_Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F314121B0ACB17008346E1 /* NSArray_Ext.m */; };
@@ -70,6 +68,8 @@
 		E1F3141E1B0ACB17008346E1 /* NSObject_JsonConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F314181B0ACB17008346E1 /* NSObject_JsonConverter.m */; };
 		E1F3141F1B0ACB17008346E1 /* NSString_Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F3141A1B0ACB17008346E1 /* NSString_Ext.m */; };
 		E1F314261B0AD19E008346E1 /* GJImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F314251B0AD19E008346E1 /* GJImageUtils.m */; };
+		E1F3142D1B0AD33F008346E1 /* GJHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F3142B1B0AD33F008346E1 /* GJHttpClient.m */; };
+		E1F314301B0AD375008346E1 /* GJCacheImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F3142F1B0AD375008346E1 /* GJCacheImage.m */; };
 		E1FF72871A92B71A0036777A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1FF72861A92B71A0036777A /* main.m */; };
 		E1FF728A1A92B71A0036777A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1FF72891A92B71A0036777A /* AppDelegate.m */; };
 		E1FF728D1A92B71A0036777A /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1FF728C1A92B71A0036777A /* MasterViewController.m */; };
@@ -123,8 +123,6 @@
 		E114A8181ADE7048001BC548 /* GJAuthorTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJAuthorTableViewController.xib; sourceTree = "<group>"; };
 		E114A81B1ADE74C4001BC548 /* GJBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJBaseTableViewController.h; sourceTree = "<group>"; };
 		E114A81C1ADE74C4001BC548 /* GJBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJBaseTableViewController.m; sourceTree = "<group>"; };
-		E1523D4B1AB67E8900E46170 /* GJCacheImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJCacheImage.h; sourceTree = "<group>"; };
-		E1523D4C1AB67E8900E46170 /* GJCacheImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJCacheImage.m; sourceTree = "<group>"; };
 		E16B83C41B097453001BEFEB /* ConstBlueTooth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstBlueTooth.h; sourceTree = "<group>"; };
 		E171FA0A1ACB81AF004BA2E7 /* GJBlueServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJBlueServerViewController.h; sourceTree = "<group>"; };
 		E171FA0B1ACB81AF004BA2E7 /* GJBlueServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJBlueServerViewController.m; sourceTree = "<group>"; };
@@ -196,8 +194,6 @@
 		E1D5B1051AAAE8B3009A759F /* GJNetWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJNetWorkViewController.h; sourceTree = "<group>"; };
 		E1D5B1061AAAE8B3009A759F /* GJNetWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJNetWorkViewController.m; sourceTree = "<group>"; };
 		E1D5B1071AAAE8B3009A759F /* GJNetWorkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJNetWorkViewController.xib; sourceTree = "<group>"; };
-		E1F20BEC1AB03B9B0059EA53 /* GJHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJHttpClient.h; sourceTree = "<group>"; };
-		E1F20BED1AB03B9B0059EA53 /* GJHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJHttpClient.m; sourceTree = "<group>"; };
 		E1F20BF01AB04BC00059EA53 /* GJParamBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJParamBase.h; sourceTree = "<group>"; };
 		E1F20BF11AB04BC00059EA53 /* GJParamBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJParamBase.m; sourceTree = "<group>"; };
 		E1F20BF31AB04C5F0059EA53 /* GJParamTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJParamTest.h; sourceTree = "<group>"; };
@@ -214,6 +210,10 @@
 		E1F3141A1B0ACB17008346E1 /* NSString_Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_Ext.m; sourceTree = "<group>"; };
 		E1F314241B0AD19E008346E1 /* GJImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJImageUtils.h; sourceTree = "<group>"; };
 		E1F314251B0AD19E008346E1 /* GJImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJImageUtils.m; sourceTree = "<group>"; };
+		E1F3142A1B0AD33F008346E1 /* GJHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJHttpClient.h; sourceTree = "<group>"; };
+		E1F3142B1B0AD33F008346E1 /* GJHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJHttpClient.m; sourceTree = "<group>"; };
+		E1F3142E1B0AD375008346E1 /* GJCacheImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJCacheImage.h; sourceTree = "<group>"; };
+		E1F3142F1B0AD375008346E1 /* GJCacheImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJCacheImage.m; sourceTree = "<group>"; };
 		E1FF72811A92B71A0036777A /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1FF72851A92B71A0036777A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1FF72861A92B71A0036777A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -463,10 +463,6 @@
 				E1D5B1051AAAE8B3009A759F /* GJNetWorkViewController.h */,
 				E1D5B1061AAAE8B3009A759F /* GJNetWorkViewController.m */,
 				E1D5B1071AAAE8B3009A759F /* GJNetWorkViewController.xib */,
-				E1F20BEC1AB03B9B0059EA53 /* GJHttpClient.h */,
-				E1F20BED1AB03B9B0059EA53 /* GJHttpClient.m */,
-				E1523D4B1AB67E8900E46170 /* GJCacheImage.h */,
-				E1523D4C1AB67E8900E46170 /* GJCacheImage.m */,
 				E17BA2951AEC887300020149 /* GJSessionHttpClient.h */,
 				E17BA2961AEC887300020149 /* GJSessionHttpClient.m */,
 			);
@@ -513,6 +509,10 @@
 		E1F314271B0AD2BA008346E1 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				E1F3142E1B0AD375008346E1 /* GJCacheImage.h */,
+				E1F3142F1B0AD375008346E1 /* GJCacheImage.m */,
+				E1F3142A1B0AD33F008346E1 /* GJHttpClient.h */,
+				E1F3142B1B0AD33F008346E1 /* GJHttpClient.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -746,7 +746,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1F20BF51AB04C5F0059EA53 /* GJParamTest.m in Sources */,
-				E1523D4D1AB67E8900E46170 /* GJCacheImage.m in Sources */,
 				E1D5B1081AAAE8B3009A759F /* GJNetWorkViewController.m in Sources */,
 				E114A8191ADE7048001BC548 /* GJAuthorTableViewController.m in Sources */,
 				E114A8031ADE63B7001BC548 /* Model.xcdatamodeld in Sources */,
@@ -755,6 +754,7 @@
 				E17960DA1AB96C81006512D6 /* GJZBarTestViewController.m in Sources */,
 				E1FF728A1A92B71A0036777A /* AppDelegate.m in Sources */,
 				E10129F91ACA84C000D99724 /* GJBlueToothTableViewController.m in Sources */,
+				E1F314301B0AD375008346E1 /* GJCacheImage.m in Sources */,
 				E1CDCB1E1B019EDA0061EFD1 /* GJImageFileManager.m in Sources */,
 				E10129FE1ACA8CC100D99724 /* GJBlueClientViewController.m in Sources */,
 				E1D2EBF71A9412A80048F8B1 /* GJExpendTableViewCell.m in Sources */,
@@ -762,6 +762,7 @@
 				E1F3141D1B0ACB17008346E1 /* NSManageObjectContext_GJFactory.m in Sources */,
 				E17BA2971AEC887300020149 /* GJSessionHttpClient.m in Sources */,
 				E171FA121ACBE704004BA2E7 /* GJBlueToothCopyViewController.m in Sources */,
+				E1F3142D1B0AD33F008346E1 /* GJHttpClient.m in Sources */,
 				E17960DE1AB972D8006512D6 /* GJBaseViewController.m in Sources */,
 				E1FF728D1A92B71A0036777A /* MasterViewController.m in Sources */,
 				E1F3141B1B0ACB17008346E1 /* NSArray_Ext.m in Sources */,
@@ -775,7 +776,6 @@
 				E1F3141C1B0ACB17008346E1 /* NSDate_StringFormater.m in Sources */,
 				E114A8141ADE7032001BC548 /* GJBookTableViewController.m in Sources */,
 				E1FF72BB1A92BE6A0036777A /* GJSectionInfo.m in Sources */,
-				E1F20BEE1AB03B9B0059EA53 /* GJHttpClient.m in Sources */,
 				E114A81D1ADE74C4001BC548 /* GJBaseTableViewController.m in Sources */,
 				E1F314261B0AD19E008346E1 /* GJImageUtils.m in Sources */,
 				E1D591B31AC54C150029FFBD /* GJiBeanconTestViewController.m in Sources */,
